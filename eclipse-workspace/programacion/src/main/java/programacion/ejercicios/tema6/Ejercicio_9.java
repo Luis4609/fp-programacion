@@ -37,11 +37,11 @@ public class Ejercicio_9 {
 
 		}
 
+		//Comprobar que no se repite ningun numero
 		for (int i = 0; i < 6; i++) {
-			for (int j = 6; j >= 0; j--) {
+			for (int j = 5; j >= 0; j--) {
 				if (numPrimitivaReintegro[i] == numPrimitivaReintegro[j]) {
 					numPrimitivaReintegro[i] = randomNuber();
-//					System.out.println("Primitiva " + numPrimitivaReintegro[i]);
 				}
 			}
 
