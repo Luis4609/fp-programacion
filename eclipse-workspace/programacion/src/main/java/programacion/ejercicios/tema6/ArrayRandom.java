@@ -2,7 +2,7 @@ package programacion.ejercicios.tema6;
 
 import java.security.SecureRandom;
 
-public class Ejercicio_9 {
+public class ArrayRandom {
 
 	/**
 	 * @return numPrimitiva, un numero para la primitiva
@@ -37,11 +37,9 @@ public class Ejercicio_9 {
 
 		}
 
-		// Comprobar que no se repite ningun numero
-
-		for (int i = 0; i < 6; i++) {
-			for (int j = 5; j >= 0; j--) {
-				if (numPrimitivaReintegro[i] == numPrimitivaReintegro[j]) {
+		for (int i = 1; i < 6; i++) {
+			for (int j = i; j > 0; j--) {
+				if (numPrimitivaReintegro[i] == numPrimitivaReintegro[j - 1]) {
 					numPrimitivaReintegro[i] = randomNuber();
 				}
 			}

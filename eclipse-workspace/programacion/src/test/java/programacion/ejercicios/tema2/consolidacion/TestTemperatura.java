@@ -37,7 +37,7 @@ public class TestTemperatura {
 		temp.farenheitToCelsius(100);
 
 		// Test
-		assertEquals(32.8, temp.getGradosCelsius()); // Segundo test FALLA PORQUE EL VALOR ESPERADO ES 37.777777777778
+		assertEquals(37.8, temp.getGradosCelsius()); // Segundo test FALLA PORQUE EL VALOR ESPERADO ES 37.777777777778
 	}
 
 }
